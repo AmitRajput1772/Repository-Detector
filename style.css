@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+
+}
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 0px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+  }
+body{
+    font-size: 13px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--lm-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper {
+    width: 327px;
+}
+#DevDetective {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#moon-day {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#search-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 18px;
+    background-color: var(--lm-bg-content);
+    padding: 6px;
+    padding-left: 10px;
+    border-radius: 12px;
+    box-shadow: var(--lm-shadow);
+    height: 55px;
+}
+#search-container input {
+    all: unset;
+    width: 200px;
+    margin-bottom: 0px;
+}
+input {
+    border: none;
+    width: 80%;
+    outline: none;
+    background: none;
+    color: var(--lm-text);
+    padding-left: 50px;
+    color: var(--lm-text);
+}
+input::placeholder {
+    font-size: 0.88em;
+    color: var(--lm-text);
+}
+#search-area {
+    position: relative;
+    margin-left: 10px;
+}
+#search-area img {
+    margin-bottom: -1px;
+    height: 17px;
+    width: 17px;
+}
+
+
+#search-container button {
+    all: unset;
+    background-color: var( --btn);
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    color: var(--lm-bg-content);
+    font-weight: bold;
+    cursor: pointer;
+}
+#search-container button:hover {
+    background-color: var(--btn-hover);
+}
+#search-container button:active {
+    scale: 0.97;
+}
+
+#main-content {
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    padding: 30px;
+}
+#upper-content {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+#upper-content  img {
+    border-radius: 50%;
+}
+
+.userName {
+    color: var(--btn);
+}
+#desc {
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 0.9em;
+    width: 100%;
+    color: var(--lm-text);
+    opacity: 0.7;
+}
+#middle-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 20px;
+    background-color: var(--lm-bg);
+    padding: 20px;
+    border-radius: 15px;
+}
+.RFF {
+    font-size: 0.8em;
+}
+.RFF p:first-of-type {
+    color: var(--lm-text);
+}
+#number {
+    font-weight: bold;
+    font-size: large;
+    color: var(--lm-text-alt);
+}
+
+#lower-content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+.lower p {
+    color: var(--lm-text);
+}
+
+.lower a {
+    color: var(--lm-text);
+}
+.lower {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lower a{
+    display: flex;
+    flex-direction: row;
+    word-break: break-all;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.website {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 330px;
+}
+
+
+#nameAndDate {
+    /* display: flex; */
+    flex-direction: row;
+    width: 100%;
+}
+#heading {
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--lm-text);
+}
+
+#dark {
+    color: var(--lm-text);
+    font-weight: bold;
+}
+
+#name {
+    font-size: 13px;
+    color: var(--lm-text-alt);
+    font-weight: bold;
+}
+#username {
+    color: var(--btn);
+    cursor: pointer;
+}
+
+#noResults {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#date {
+    color: var(--lm-text);
+}
+#userEntry {
+    background: none;
+    color: var(--lm-text);
+}
+@media screen and (min-width: 729px) {
+    body{
+        font-size: 16px;
+    }
+    #wrapper {
+      width: 573px;
+    }
+    #search-container input {
+        width: 300px;
+    }
+    #search-container input::placeholder {
+        font-size: 1.2em;
+    }
+    #search-container button {
+        font-size: 1em;
+    }
+    #search-container {
+        height: 65px;
+    }
+    #lower-content {
+        grid-template-columns: 150px 1fr;
+    }
+    #nameAndDate {
+        margin-left: 20px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }  
+    #name {
+        font-size: 26px;
+    }
+    #noResults {
+        position: absolute;
+        top: 25px;
+        right: 140px;
+    }
+    
+}
+@media screen and (min-width: 1280px) {
+    #wrapper {
+      width: 730px;
+    }
+    #search-container input {
+        width: 400px;
+    }
+    #search-container input::placeholder {
+        font-size: 1.1em;
+    }
+    #search-container button {
+        font-size: 1.1em;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #search-container {
+        height: 70px;
+    }
+    #right-part {
+        margin-left: 150px;
+    }
+    #lower-content {
+        grid-template-columns: 200px 1fr;
+    }
+
+    #nameAndDate {
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+        /* gap: 15px; */
+    }
+    #search-container input {
+        margin-bottom: 0px;
+    }
+    #left-part img{
+        width: 117px;
+        height: 117px;
+    }
+    #upper-content {
+        gap: 4px;
+    }
+    #desc{
+        margin-top: 0px;
+        overflow-x: hidden;
+    }
+    #middle-content {
+        width: 99%;
+    }
+    #number{
+        font-size:1.8em;
+    }
+    #name {
+        padding-right: 10px;
+        display: flex;
+        font-size: 26px;
+        /* justify-content: center;
+        align-items: center; */
+        flex-wrap: wrap;
+        width: 200px;
+    }
+}
+

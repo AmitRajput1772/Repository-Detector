@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github repo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- whole inner content -->
+    <div id="wrapper">
+        
+        <!--devdetective and dark mode  -->
+        <div id="DevDetective"  DevDetective>
+            <p id="heading"  heading>DevDetective</p>
+            <div id="moon-day"  moonDay>
+                <p id="dark"  dark>Dark</p>
+                <img src="./images/moon-icon.svg" id="moon" moon>
+            </div>
+        </div>
+
+        <!-- enter a github username section -->
+        <div id="search-container"  searchContainer>
+                <div id="search-area" >
+                    <img src="./images/search-icon.svg" alt="">
+                    <input type="search" name="user-input" id="userEntry" placeholder="Enter a Github username..." searchArea>
+                </div> 
+                <p noResults id =noResults> no search results </p>
+                <button  searchButton>Search</button>
+        </div>
+
+        <!-- main content wali div -->
+        <div id="main-content"  mainContent>
+
+            <div id="upper-content"  upperContent>
+
+                <!-- left part -->
+                <div id="left-part"  leftPart>
+                    <img src="./1687665731215 (1).jpg" alt=""  height="100px" width="100px" id="user-image" userImage>
+
+                </div>
+
+                <!-- name and joining data -->
+                <div id="nameAndDate">
+                    <div class="nameUsername">
+                        <div id="name"  fullName></div>
+                        <!-- <p class="username" username> @amitrajput</p> -->
+                        <a href="" userName target="_blank" class="userName"></a>
+
+                    </div>
+                    <div id="date" date>
+                    </div>
+
+                </div>
+                
+                
+
+            </div>
+
+
+            <!-- right-part -->
+            
+            <div id="right-part">
+
+                <p id="desc"  Desc>
+                    <!-- I am Amit Rajput, from gujarat, India. currently I am  pursuing 
+                    MCA at NIT Jamshedpur. I  have cleared NIMCET 2022 with a 
+                    rank of 416. -->
+                </p>
+
+                <div id="middle-content">
+
+                    <!-- for repos -->
+                    <div id="repos " class="RFF">
+                        <p>Repos</p>
+                        <p id="number"  repository></p>
+                    </div>
+
+                    <!-- followers -->
+                    <div id="followers " class="RFF">
+                        <p>Followers</p>
+                        <p id="number"  followersNum></p>
+                    </div>
+
+                    <!-- following -->
+                    <div id="following " class="RFF">
+                        <p>Following</p>
+                        <p id="number"  followingNum></p>
+                    </div>
+
+                </div>
+
+                <div id="lower-content">
+
+                    <div id="location-container" class="lower">
+                        <img src="./images/location-icon.svg" alt="">
+                        <p  location id="location"></p>
+                    </div>
+
+                    <div id="company-container" class="lower">
+                        <img src="./images/website-icon.svg" alt="">
+                        
+                        <a href="" class="website" website target="_blank"></a>
+                    </div>
+
+                    <div id="twitter-container" class="lower">
+                        <img src="./images/twitter-icon.svg" alt="" class="twitter-logo">
+                        <a href=""  twitter target="blank" ></a>
+                    </div>
+
+                    <div  id="website-container"  class="lower">
+                        <img src="./images/company-icon.svg" alt="">
+                        <p  company></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+<script src="scripts.js"></script>
+</body>
+</html>
